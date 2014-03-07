@@ -1,0 +1,88 @@
+'.source.arduino':
+  'Analog Read':
+    'prefix': 'analogRead'
+    'body': 'analogRead(${1:pin});$2'
+  'Analog Write':
+    'prefix': 'analogWrite'
+    'body': 'analogWrite(${1:pin}, ${2:value});$3'
+  'Attach Interrupt':
+    'prefix': 'attachInterrupt'
+    'body': 'attachInterrupt(${1:interrupt}, ${2:function}, ${3:mode});$4'
+  'Delay':
+    'prefix': 'delay'
+    'body': 'delay(${1:ms});$2'
+  'Delay Microseconds':
+    'prefix': 'delayMicroseconds'
+    'body': 'delayMicroseconds(${1:us});$2'
+  'Detach Interrupt':
+    'prefix': 'detachInterrupt'
+    'body': 'detachInterrupt(${1:interrupt});$2'
+  'Digital Read':
+    'prefix': 'digitalRead'
+    'body': 'digitalRead(${1:pin});$2'
+  'Digital Write':
+    'prefix': 'digitalWrite'
+    'body': 'digitalWrite(${1:pin}, ${2:value});$3'
+  'Pin Mode':
+    'prefix': 'pinMode'
+    'body': 'pinMode(${1:pin}, ${2:mode});$3'
+  'Pulse In':
+    'prefix': 'pulseIn'
+    'body': 'pulseIn(${1:pin}, ${2:value}, ${3:timeout});$4'
+  'Serial Available':
+    'prefix': 'savailable'
+    'body': 'if (Serial.available() > ${1:0}) {\n    $2\n}'
+  'Serial Begin':
+    'prefix': 'sbegin'
+    'body': 'Serial.begin(${1:9600});$2'
+  'Serial End':
+    'prefix': 'send'
+    'body': 'Serial.end();'
+  'Serial Find':
+    'prefix': 'sfind'
+    'body': 'Serial.find(${1:target});$2'
+  'Serial Find Until':
+    'prefix': 'sfindUntil'
+    'body': 'Serial.findUntil(${1:target}, ${2:terminal});$3'
+  'Serial Flush':
+    'prefix': 'sflush'
+    'body': 'Serial.flush();'
+  'Serial Parse Float':
+    'prefix': 'spfloat'
+    'body': 'Serial.parseFloat();'
+  'Serial Parse Int':
+    'prefix': 'spint'
+    'body': 'Serial.parseInt();'
+  'Serial Peek':
+    'prefix': 'speek'
+    'body': 'Serial.peek();'
+  'Serial Print':
+    'prefix': 'sprint'
+    'body': 'Serial.print(${1:val}, ${2:format});$3'
+  'Serial Print Line':
+    'prefix': 'sprintln'
+    'body': 'Serial.println(${1:val}, ${2:format});$3'
+  'Serial Read':
+    'prefix': 'sread'
+    'body': 'Serial.read();'
+  'Serial Read Bytes':
+    'prefix': 'sreadBytes'
+    'body': 'Serial.readBytes(${1:buffer}, ${2:length});$3'
+  'Serial Read Bytes Until':
+    'prefix': 'sreadBytesUntil'
+    'body': 'Serial.readBytesUntil(${1:character}, ${2:buffer}, ${3:length});$4'
+  'Serial Set Timeout':
+    'prefix': 'stimeout'
+    'body': 'Serial.setTimeout(${1:time});$2'
+  'Serial Write':
+    'prefix': 'swrite'
+    'body': 'Serial.write(${1:data});$2'
+  'Shift In':
+    'prefix': 'shiftIn'
+    'body': 'shiftIn(${1:dataPin}, ${2:clockPin}, ${3:bitOrder});$4'
+  'Shift Out':
+    'prefix': 'shiftOut'
+    'body': 'shiftout(${1:dataPin}, ${2:clockPin}, ${3:bitOrder}, ${4:value});$5'
+  'Tone':
+    'prefix': 'tone'
+    'body': 'tone(${1:pin}, ${2:frequency}, ${3:duration});$4'
