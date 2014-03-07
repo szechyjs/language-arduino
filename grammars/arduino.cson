@@ -3,4 +3,9 @@
   'pde'
 ]
 'name': 'Arduino'
-'scopeName': 'source.c++'
+'scopeName': 'source.c++.arduino'
+'patterns': [
+  {
+      'include': 'source.c++'
+  }
+]
