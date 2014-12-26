@@ -6,6 +6,11 @@
 'scopeName': 'source.arduino'
 'patterns': [
   {
+      'include': 'source.cpp'
+  }
+
+  # For compatibility with Atom versions < 0.166
+  {
       'include': 'source.c++'
   }
 ]
