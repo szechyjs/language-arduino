@@ -1,6 +1,6 @@
 {
   "name": "language-arduino",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Atom language support for Arduino",
   "repository": "https://github.com/szechyjs/language-arduino",
   "license": "MIT",
