@@ -23,6 +23,13 @@
   'Digital Write':
     'prefix': 'digitalWrite'
     'body': 'digitalWrite(${1:pin}, ${2:value});$3'
+  'Loop':
+    'prefix': 'loop'
+    'body': """
+      void loop() {
+        $1
+      }
+    """
   'Pin Mode':
     'prefix': 'pinMode'
     'body': 'pinMode(${1:pin}, ${2:mode});$3'
@@ -77,6 +84,13 @@
   'Serial Write':
     'prefix': 'swrite'
     'body': 'Serial.write(${1:data});$2'
+  'Setup':
+    'prefix': 'setup'
+    'body': """
+      void setup() {
+        $1
+      }
+    """
   'Shift In':
     'prefix': 'shiftIn'
     'body': 'shiftIn(${1:dataPin}, ${2:clockPin}, ${3:bitOrder});$4'
