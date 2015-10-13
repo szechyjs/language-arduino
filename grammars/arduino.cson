@@ -1,6 +1,8 @@
 'fileTypes': [
   'ino'
   'pde'
+  'INO'
+  'PDE'
 ]
 'name': 'Arduino'
 'scopeName': 'source.arduino'
@@ -9,6 +11,529 @@
       'include': 'source.cpp'
   }
 
+  {
+      'include': '#special_block'
+  }
+    # Classes
+  {
+      'match': 'Serial'
+      'name': 'support.class.arduino'
+  }
+
+  {
+      'match': 'String'
+      'name': 'support.class.arduino'
+  }
+    # Constants
+  {
+      'match': 'HIGH'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'LOW'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'INPUT'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'INPUT_PULLUP'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'OUTPUT'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'LED_BUILTIN'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'DEC'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'BIN'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'HEX'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'OCT'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'BYTE'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'PI'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'HALF_PI'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'TWO_PI'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'LSBFIRST'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'MSBFIRST'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'CHANGE'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'FALLING'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'RISING'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'DEFAULT'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'INTERNAL'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'EXTERNAL'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'INTERNAL1V1'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'INTERNAL2V56'
+      'name': 'constant.arduino'
+  }
+
+  {
+      'match': 'null'
+      'name': 'constant.arduino'
+  }
+    # Functions
+  {
+      'match': 'abs'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'acos'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'asin'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'atan'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'atan2'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'ceil'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'constrain'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'cos'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'degrees'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'exp'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'floor'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'log'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'map'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'max'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'min'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'radians'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'random'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'randomSeed'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'round'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'sin'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'sq'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'pow'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'sqrt'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'tan'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'bitRead'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'bitWrite'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'bitSet'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'bitClear'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'bit'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'sizeof'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'highByte'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'lowByte'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'analogReference'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'analogReadResolution'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'analogWriteResolution'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'analogRead'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'analogWrite'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'attachInterrupt'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'detachInterrupt'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'delay'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'delayMicroseconds'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'digitalWrite'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'digitalRead'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'interrupts'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'millis'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'micros'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'noInterrupts'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'noTone'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'pinMode'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'pulseIn'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'shiftOut'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'tone'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'begin'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'end'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'read'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'print'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'println'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'available'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'flush'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'setup'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'loop'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isAlphaNumeric'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isAlpha'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isAscii'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isWhiteSpace'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isControl'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isDigit'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isGraph'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isLowerCase'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isPrintable'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isPunct'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isSpace'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isUpperCase'
+      'name': 'storage.function.arduino'
+  }
+
+  {
+      'match': 'isHexadecimalDigit'
+      'name': 'storage.function.arduino'
+  }
+    # Modifiers
+  {
+      'match': 'public'
+      'name': 'storage.modifier.arduino'
+  }
+
+  {
+      'match': 'private'
+      'name': 'storage.modifier.arduino'
+  }
+
+  {
+      'match': 'protected'
+      'name': 'storage.modifier.arduino'
+  }
   # For compatibility with Atom versions < 0.166
   {
       'include': 'source.c++'
