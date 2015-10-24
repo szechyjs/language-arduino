@@ -13,4 +13,17 @@
   {
       'include': 'source.c++'
   }
+
+  {
+    'match': '\\b(boolean|byte|word)\\b'
+    'name': 'storage.type.arduino'
+  }
+  {
+    'match': '\\bString\\b'
+    'name': 'support.class.arduino'
+  }
+  {
+    'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|LED_BUILTIN)\\b'
+    'name': 'constant.language.arduino'
+  }
 ]
