@@ -23,7 +23,7 @@
     'name': 'support.class.arduino'
   }
   {
-    'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|LED_BUILTIN)\\b'
+    'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|OUTPUT|LED_BUILTIN)\\b'
     'name': 'constant.language.arduino'
   }
 ]
