@@ -1,13 +1,78 @@
 '.source.arduino':
+  'Absolute Value':
+    'prefix': 'abs'
+    'body': 'abs(${1:x});$2'
   'Analog Read':
     'prefix': 'analogRead'
     'body': 'analogRead(${1:pin});$2'
+  'Analog Read Resolution':
+    'prefix': 'analogReadResolution'
+    'body': 'analogReadResolution(${1:bits});$2'
+  'Analog Write Resolution':
+    'prefix': 'analogWriteResolution'
+    'body': 'analogWriteResolution(${1:bits});$2'
+  'Analog Reference':
+    'prefix': 'analogReference'
+    'body': 'analogReference(${1:type});$2'
   'Analog Write':
     'prefix': 'analogWrite'
     'body': 'analogWrite(${1:pin}, ${2:value});$3'
+  'Arc Cosine':
+    'prefix': 'acos'
+    'body': 'acos(${1:rad});$2'
+  'Arc Sine':
+    'prefix': 'asin'
+    'body': 'asin(${1:rad});$2'
+  'Arc Tangent':
+    'prefix': 'atan'
+    'body': 'atan(${1:rad});$2'
   'Attach Interrupt':
     'prefix': 'attachInterrupt'
     'body': 'attachInterrupt(${1:interrupt}, ${2:function}, ${3:mode});$4'
+  'Bit':
+    'prefix': 'bit'
+    'body': 'bit(${1:x});$2'
+  'Bit Clear':
+    'prefix': 'bitClear'
+    'body': 'bitClear(${1:x}, ${2:n});$3'
+  'Bit Read':
+    'prefix': 'bitRead'
+    'body': 'bitRead(${1:x}, ${2:n});$3'
+  'Bit Set':
+    'prefix': 'bitSet'
+    'body': 'bitSet(${1:x}, ${2:n});$3'
+  'Bit Write':
+    'prefix': 'bitWrite'
+    'body': 'bitWrite(${1:x}, ${2:n}, ${3:b});$4'
+  'Byte':
+    'prefix': 'byte'
+    'body': 'byte(${1:x});$2'
+  'Case':
+    'prefix': 'case'
+    'body': """
+      case ${1:label}:
+          ${2:// statements}
+          break;$3
+    """
+  'Character':
+    'prefix': 'char'
+    'body': 'char(${1:x});$2'
+  'Constrain':
+    'prefix': 'constrain'
+    'body': 'constrain(${1:x}, ${2:a}, ${3:b});$4'
+  'Cosine':
+    'prefix': 'cos'
+    'body': 'cos(${1:rad});$2'
+  'Default':
+    'prefix': 'default'
+    'body': """
+      default:
+          ${1:// statements}
+      break;$2
+    """
+  'Define':
+    'prefix': 'define'
+    'body': '#define ${1:constantName} ${2:value}'
   'Delay':
     'prefix': 'delay'
     'body': 'delay(${1:ms});$2'
@@ -23,22 +88,143 @@
   'Digital Write':
     'prefix': 'digitalWrite'
     'body': 'digitalWrite(${1:pin}, ${2:value});$3'
+  'Do-While':
+    'prefix': 'do'
+    'body': """
+      do {
+          ${1:// statements}
+      } while (${2:condition});$3
+    """
+  'Else':
+    'prefix': 'else'
+    'body': """
+      else {
+          ${1:// statements}
+      }$2
+    """
+  'For':
+    'prefix': 'for'
+    'body': """
+      for (${1:initialization}; ${2:condition}; ${3:increment}) {
+          ${4:// statements}
+      }$5
+    """
+  'Float':
+    'prefix': 'float'
+    'body': 'float(${1:x});$2'
+  'High Byte':
+    'prefix': 'highByte'
+    'body': 'highByte(${1:x});$2'
+  'If':
+    'prefix': 'if'
+    'body': """
+      if (${1:condition}) {
+          ${2:// statements}
+      }$3
+    """
+  'Include':
+    'prefix': 'include'
+    'body': '#include <${1:library}>$2'
+  'Integer':
+    'prefix': 'int'
+    'body': 'int(${1:x});$2'
+  'Interrupts':
+    'prefix': 'interrupts'
+    'body': 'interrupts();$1'
+  'Is Alpha':
+    'prefix': 'isAlpha'
+    'body': 'isAlpha(${1:thisChar});$2'
+  'Is Alpha Numeric':
+    'prefix': 'isAlphaNumeric'
+    'body': 'isAlphaNumeric(${1:thisChar});$2'
+  'Is Ascii':
+    'prefix': 'isAscii'
+    'body': 'isAscii(${1:thisChar});$2'
+  'Is Control':
+    'prefix': 'isControl'
+    'body': 'isAlpha(${1:thisChar});$2'
+  'Is Digit':
+    'prefix': 'isDigit'
+    'body': 'isDigit(${1:thisChar});$2'
+  'Is Graph':
+    'prefix': 'isGraph'
+    'body': 'isGraph(${1:thisChar});$2'
+  'Is Hexadecimal Digit':
+    'prefix': 'isHexadecimalDigit'
+    'body': 'isHexadecimalDigit(${1:thisChar});$2'
+  'Is Lower Case':
+    'prefix': 'isLowerCase'
+    'body': 'isLowerCase(${1:thisChar});$2'
+  'Is Printable':
+    'prefix': 'isPrintable'
+    'body': 'isPrintable(${1:thisChar});$2'
+  'Is Punctuation':
+    'prefix': 'isPunct'
+    'body': 'isPunct(${1:thisChar});$2'
+  'Is Alpha':
+    'prefix': 'isAlpha'
+    'body': 'isAlpha(${1:thisChar});$2'
+  'Is Space':
+    'prefix': 'isSpace'
+    'body': 'isSpace(${1:thisChar});$2'
+  'Is Upper Case':
+    'prefix': 'isUpperCase'
+    'body': 'isUpperCase(${1:thisChar});$2'
   'Loop':
     'prefix': 'loop'
     'body': """
       void loop() {
-        $1
-      }
+          $1
+      }$2
     """
+  'Long':
+    'prefix': 'long'
+    'body': 'long(${1:x});$2'
+  'Low Byte':
+    'prefix': 'lowByte'
+    'body': 'lowByte(${1:x});$2'
+  'Map':
+    'prefix': 'map'
+    'body': 'map(${1:value}, ${2:fromLow}, ${3:fromHigh}, ${4:toLow}, ${5:toHigh});$6'
+  'Maximum':
+    'prefix': 'max'
+    'body': 'max(${1:x}, ${2:y});$3'
+  'Microseconds':
+    'prefix': 'micros'
+    'body': 'micros();$1'
+  'Milliseconds':
+    'prefix': 'millis'
+    'body': 'millis();$1'
+  'Minimum':
+    'prefix': 'min'
+    'body': 'min(${1:x}, ${2:y});$3'
+  'No Interrupts':
+    'prefix': 'noInterrupts'
+    'body': 'noInterrupts();$1'
+  'No Tone':
+    'prefix': 'noTone'
+    'body': 'noTone(${1:pin});$2'
+  'Power':
+    'prefix': 'pow'
+    'body': 'pow(${1:base}, ${2:exponent});$3'
   'Pin Mode':
     'prefix': 'pinMode'
     'body': 'pinMode(${1:pin}, ${2:mode});$3'
   'Pulse In':
     'prefix': 'pulseIn'
     'body': 'pulseIn(${1:pin}, ${2:value}, ${3:timeout});$4'
+  'Random':
+    'prefix': 'random'
+    'body': 'random(${1:min}, ${2:max});$3'
+  'Random Seed':
+    'prefix': 'randomSeed'
+    'body': 'randomSeed(${1:seed});$2'
   'Serial Available':
     'prefix': 'savailable'
     'body': 'if (Serial.available() > ${1:0}) {\n    $2\n}'
+  'Serial Available For Write':
+    'prefix': 'safwrite'
+    'body': 'Serial.availableForWrite();'
   'Serial Begin':
     'prefix': 'sbegin'
     'body': 'Serial.begin(${1:9600});$2'
@@ -65,10 +251,10 @@
     'body': 'Serial.peek();'
   'Serial Print':
     'prefix': 'sprint'
-    'body': 'Serial.print(${1:val}, ${2:format});$3'
+    'body': 'Serial.print(${1:value}, ${2:format});$3'
   'Serial Print Line':
     'prefix': 'sprintln'
-    'body': 'Serial.println(${1:val}, ${2:format});$3'
+    'body': 'Serial.println(${1:value}, ${2:format});$3'
   'Serial Read':
     'prefix': 'sread'
     'body': 'Serial.read();'
@@ -78,18 +264,31 @@
   'Serial Read Bytes Until':
     'prefix': 'sreadBytesUntil'
     'body': 'Serial.readBytesUntil(${1:character}, ${2:buffer}, ${3:length});$4'
+  'Serial Read String':
+    'prefix': 'sreadString'
+    'body': 'Serial.readString();'
+  'Serial Read String Until':
+    'prefix': 'sreadStringUntil'
+    'body': 'Serial.readStringUntil(${1:terminator});$2'
   'Serial Set Timeout':
     'prefix': 'stimeout'
     'body': 'Serial.setTimeout(${1:time});$2'
   'Serial Write':
     'prefix': 'swrite'
     'body': 'Serial.write(${1:data});$2'
+  'Serial Event':
+    'prefix': 'sevent'
+    'body': """
+      void serialEvent() {
+          ${1:// statements}
+      }$2
+    """
   'Setup':
     'prefix': 'setup'
     'body': """
       void setup() {
-        $1
-      }
+          $1
+      }$2
     """
   'Shift In':
     'prefix': 'shiftIn'
@@ -97,6 +296,38 @@
   'Shift Out':
     'prefix': 'shiftOut'
     'body': 'shiftout(${1:dataPin}, ${2:clockPin}, ${3:bitOrder}, ${4:value});$5'
+  'Sine':
+    'prefix': 'sin'
+    'body': 'sin(${1:rad});$2'
+  'Size Of':
+    'prefix': 'sizeof'
+    'body': 'sizeof(${1:variable});$2'
+  'Square':
+    'prefix': 'sq'
+    'body': 'sq(${1:x});$2'
+  'Square Root':
+    'prefix': 'sqrt'
+    'body': 'sqrt(${1:x});$2'
+  'Switch':
+    'prefix': 'switch'
+    'body': """
+      switch (${1:variable}) {
+          ${2:// statements}
+      }$3
+    """
+  'Tangent':
+    'prefix': 'tan'
+    'body': 'tan(${1:rad});$2'
   'Tone':
     'prefix': 'tone'
     'body': 'tone(${1:pin}, ${2:frequency}, ${3:duration});$4'
+  'While':
+    'prefix': 'while'
+    'body': """
+      while (${1:condition}) {
+          ${2:// statements}
+      }$3
+    """
+  'Word':
+    'prefix': 'word'
+    'body': 'word(${1:h}, ${2:l});$3'
