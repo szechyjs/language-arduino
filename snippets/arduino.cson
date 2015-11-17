@@ -100,3 +100,6 @@
   'Tone':
     'prefix': 'tone'
     'body': 'tone(${1:pin}, ${2:frequency}, ${3:duration});$4'
+  'Millis':
+    'prefix': 'millis'
+    'body': 'millis()$1'
