@@ -15,7 +15,7 @@
   }
 
   {
-    'match': '\\b(boolean|byte|word|uin8_t|uin16_t|uin32_t|uin64_t)\\b'
+    'match': '\\b(boolean|byte|word)\\b'
     'name': 'storage.type.arduino'
   }
   {
