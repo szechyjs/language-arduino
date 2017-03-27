@@ -15,7 +15,7 @@
   }
 
   {
-    'match': '\\b(boolean|byte|word|PROGMEM|uint_8|uint_16|uint_32)\\b'
+    'match': '\\b(boolean|byte|word|uint_8|uint_16|uint_32)\\b'
     'name': 'storage.type.arduino'
   }
   {
@@ -25,5 +25,9 @@
   {
     'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|OUTPUT|LED_BUILTIN|CHANGE|RISING|FALLING)\\b'
     'name': 'constant.language.arduino'
+  }
+  {
+    'match': '\\bPROGMEM\\b'
+    'name': 'storage.modifier.arduino'
   }
 ]
