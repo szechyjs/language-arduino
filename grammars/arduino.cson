@@ -26,4 +26,8 @@
     'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|OUTPUT|LED_BUILTIN|CHANGE|RISING|FALLING)\\b'
     'name': 'constant.language.arduino'
   }
+  {
+    'match': '\\bPROGMEM\\b'
+    'name': 'storage.modifier.arduino'
+  }
 ]
