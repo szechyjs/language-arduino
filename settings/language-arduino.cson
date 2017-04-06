@@ -15,3 +15,5 @@
       |^ \\s* @(public|private|protected) \\s* $
       '
     'foldEndPattern': '(?<!\\*)\\*\\*/|^\\s*\\}'
+
+    'tabLength': 2
