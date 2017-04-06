@@ -27,8 +27,8 @@
     'name': 'constant.language.arduino'
   }
   {
-    'match': '\\b(acos|asin|atan2|constrain|degrees|floor|map|max|min|radians|random|randomSeed|sq|bitRead|bitSet|bitCleatbit|sizeof|lowByte|analogReference|analogReadResolution|analogReadResolution|analogRead|analogWrite|attachInterrupt|detachInterrupt|delay|delayMicroseconds|digitalWrite|digitalRead|interrupts|millis|micros|noInterrupts|noTone|pinMode|pulseIn|shiftOut|tone|begin|end|read|print|println|available|flush|setup|loop|isAlphaNumeric|isAlpha|isAscii|isWhiteSpace|isControl|isDigit|isLowerCase|isGraph|isLowerCase|isPrintable|isPunct|isSpace|isUpperCase|isHexadecimalDigit)\\b'
-    'name': 'entity.name.function.arduino'
+    'match': '\\b(acos|asin|atan2|constrain|degrees|map|max|min|radians|random|randomSeed|sq|bitRead|bitSet|bitCleatbit|lowByte|analogReference|analogReadResolution|analogReadResolution|analogRead|analogWrite|attachInterrupt|detachInterrupt|delay|delayMicroseconds|digitalWrite|digitalRead|interrupts|millis|micros|noInterrupts|noTone|pinMode|pulseIn|shiftOut|tone|begin|end|read|print|println|available|flush|setup|loop|isAlphaNumeric|isAlpha|isAscii|isWhiteSpace|isControl|isDigit|isLowerCase|isGraph|isLowerCase|isPrintable|isPunct|isSpace|isUpperCase|isHexadecimalDigit)\\b'
+    'name': 'support.function.arduino'
   }
   {
     'match': '\\bPROGMEM\\b'
