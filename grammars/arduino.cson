@@ -28,7 +28,7 @@
   }
   {
     'match': '\\b(abs|acos|asin|atan|atan2|ceil|constrain|cos|degrees|exp|floor|log|map|max|min|radians|random|randomSeed|round|sin|sq|pow|sqrt|tan|bitRead|bitSet|bitCleatbit|sizeof|lowByte|analogReference|analogReadResolution|analogReadResolution|analogRead|analogWrite|attachInterrupt|detachInterrupt|delay|delayMicroseconds|digitalWrite|digitalRead|interrupts|millis|micros||noInterrupts|noTone|pinMode|pulseIn|shiftOut|tone|begin|end|read|print|println|available|flush|setup|loop|isAlphaNumeric|isAlpha|isAscii|isWhiteSpace|isControl|isDigit|isLowerCase|isGraph|isLowerCase|isPrintable|isPunct|isSpace|isUpperCase|isHexadecimalDigit)\\b'
-    'name': 'constant.function.arduino'
+    'name': 'entity.name.function.arduino'
   }
   {
     'match': '\\bPROGMEM\\b'
