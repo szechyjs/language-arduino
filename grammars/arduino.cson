@@ -27,7 +27,7 @@
     'name': 'constant.language.arduino'
   }
   {
-    'match': '\b(B)(0|1){0,8}\b'
+    'match': '\bB[01]{1,8}\b'
     'name': 'constant.language.arduino'
   }
   {
