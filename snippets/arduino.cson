@@ -100,21 +100,6 @@
   'Shift Out':
     'prefix': 'shiftOut'
     'body': 'shiftout(${1:dataPin}, ${2:clockPin}, ${3:bitOrder}, ${4:value});$5'
-  'Switch':
-    'prefix': 'switch'
-    'body': """
-      switch (${1:variable}) {
-        case ${2:label}:
-          $3
-          break;
-        case ${4:label}:
-          $5
-          break;
-        default:
-          $6
-          break;
-      }
-    """
   'Tone':
     'prefix': 'tone'
     'body': 'tone(${1:pin}, ${2:frequency}, ${3:duration});$4'
