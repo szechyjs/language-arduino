@@ -30,6 +30,9 @@
         $1
       }
     """
+  'Map':
+    'prefix': 'map'
+    'body': 'map(${1:value}, ${2:fromLow}, ${3:fromHigh}, ${4:toLow}, ${5:toHigh});$6'
   'Pin Mode':
     'prefix': 'pinMode'
     'body': 'pinMode(${1:pin}, ${2:mode});$3'
