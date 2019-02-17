@@ -1,41 +1,28 @@
-'fileTypes': [
-  'ino'
-  'pde'
-]
-'name': 'Arduino'
 'scopeName': 'source.arduino'
+'injectionSelector': 'source.cpp'
 'patterns': [
   {
-      'include': 'source.cpp'
-  }
-
-  # For compatibility with Atom versions < 0.166
-  {
-      'include': 'source.c++'
-  }
-
-  {
     'match': '\\b(boolean|byte|word)\\b'
-    'name': 'storage.type.arduino'
+    'name': 'storage.type.cpp'
   }
   {
     'match': '\\bString\\b'
-    'name': 'support.class.arduino'
+    'name': 'support.class.cpp'
   }
   {
     'match': '\\b(HIGH|LOW|INPUT|INPUT_PULLUP|OUTPUT|LED_BUILTIN|CHANGE|RISING|FALLING|PI|HALF_PI|TWO_PI|DEG_TO_RAD|RAD_TO_DEG|EULER|LSBFIRST|MSBFIRST|INTERNAL1V1|INTERNAL2V56|EXTERNAL|INTERNAL|DEFAULT|DEC|BIN|HEX|OCT|BYTE)\\b'
-    'name': 'constant.language.arduino'
+    'name': 'constant.language.cpp'
   }
   {
     'match': '\bB[01]{1,8}\b'
-    'name': 'constant.language.arduino'
+    'name': 'constant.language.cpp'
   }
   {
     'match': '\\b(acos|asin|atan2|constrain|degrees|map|max|min|radians|random|randomSeed|sq|bitRead|bitSet|bitCleatbit|lowByte|analogReference|analogReadResolution|analogReadResolution|analogRead|analogWrite|attachInterrupt|detachInterrupt|delay|delayMicroseconds|digitalWrite|digitalRead|interrupts|millis|micros|noInterrupts|noTone|pinMode|pulseIn|shiftOut|tone|begin|end|read|print|println|available|flush|setup|loop|isAlphaNumeric|isAlpha|isAscii|isWhiteSpace|isControl|isDigit|isLowerCase|isGraph|isLowerCase|isPrintable|isPunct|isSpace|isUpperCase|isHexadecimalDigit)\\b'
-    'name': 'support.function.arduino'
+    'name': 'support.function.cpp'
   }
   {
     'match': '\\bPROGMEM\\b'
-    'name': 'storage.modifier.arduino'
+    'name': 'storage.modifier.cpp'
   }
 ]

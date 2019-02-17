@@ -1,28 +1,36 @@
-'.source.arduino':
+'.source.cpp':
   'Analog Read':
     'prefix': 'analogRead'
     'body': 'analogRead(${1:pin});$2'
+    'leftLabel': 'Arduino'
   'Analog Write':
     'prefix': 'analogWrite'
     'body': 'analogWrite(${1:pin}, ${2:value});$3'
+    'leftLabel': 'Arduino'
   'Attach Interrupt':
     'prefix': 'attachInterrupt'
     'body': 'attachInterrupt(${1:interrupt}, ${2:function}, ${3:mode});$4'
+    'leftLabel': 'Arduino'
   'Delay':
     'prefix': 'delay'
     'body': 'delay(${1:ms});$2'
+    'leftLabel': 'Arduino'
   'Delay Microseconds':
     'prefix': 'delayMicroseconds'
     'body': 'delayMicroseconds(${1:us});$2'
+    'leftLabel': 'Arduino'
   'Detach Interrupt':
     'prefix': 'detachInterrupt'
     'body': 'detachInterrupt(${1:interrupt});$2'
+    'leftLabel': 'Arduino'
   'Digital Read':
     'prefix': 'digitalRead'
     'body': 'digitalRead(${1:pin});$2'
+    'leftLabel': 'Arduino'
   'Digital Write':
     'prefix': 'digitalWrite'
     'body': 'digitalWrite(${1:pin}, ${2:value});$3'
+    'leftLabel': 'Arduino'
   'Loop':
     'prefix': 'loop'
     'body': """
@@ -30,63 +38,83 @@
         $1
       }
     """
+    'leftLabel': 'Arduino'
   'Map':
     'prefix': 'map'
     'body': 'map(${1:value}, ${2:fromLow}, ${3:fromHigh}, ${4:toLow}, ${5:toHigh});$6'
+    'leftLabel': 'Arduino'
   'Pin Mode':
     'prefix': 'pinMode'
     'body': 'pinMode(${1:pin}, ${2:mode});$3'
+    'leftLabel': 'Arduino'
   'Pulse In':
     'prefix': 'pulseIn'
     'body': 'pulseIn(${1:pin}, ${2:value}, ${3:timeout});$4'
+    'leftLabel': 'Arduino'
   'Serial Available':
     'prefix': 'savailable'
     'body': 'if (Serial.available() > ${1:0}) {\n    $2\n}'
+    'leftLabel': 'Arduino'
   'Serial Begin':
     'prefix': 'sbegin'
     'body': 'Serial.begin(${1:9600});$2'
+    'leftLabel': 'Arduino'
   'Serial End':
     'prefix': 'send'
     'body': 'Serial.end();'
+    'leftLabel': 'Arduino'
   'Serial Find':
     'prefix': 'sfind'
     'body': 'Serial.find(${1:target});$2'
+    'leftLabel': 'Arduino'
   'Serial Find Until':
     'prefix': 'sfindUntil'
     'body': 'Serial.findUntil(${1:target}, ${2:terminal});$3'
+    'leftLabel': 'Arduino'
   'Serial Flush':
     'prefix': 'sflush'
     'body': 'Serial.flush();'
+    'leftLabel': 'Arduino'
   'Serial Parse Float':
     'prefix': 'spfloat'
     'body': 'Serial.parseFloat();'
+    'leftLabel': 'Arduino'
   'Serial Parse Int':
     'prefix': 'spint'
     'body': 'Serial.parseInt();'
+    'leftLabel': 'Arduino'
   'Serial Peek':
     'prefix': 'speek'
     'body': 'Serial.peek();'
+    'leftLabel': 'Arduino'
   'Serial Print':
     'prefix': 'sprint'
     'body': 'Serial.print(${1:val}, ${2:format});$3'
+    'leftLabel': 'Arduino'
   'Serial Print Line':
     'prefix': 'sprintln'
     'body': 'Serial.println(${1:val}, ${2:format});$3'
+    'leftLabel': 'Arduino'
   'Serial Read':
     'prefix': 'sread'
     'body': 'Serial.read();'
+    'leftLabel': 'Arduino'
   'Serial Read Bytes':
     'prefix': 'sreadBytes'
     'body': 'Serial.readBytes(${1:buffer}, ${2:length});$3'
+    'leftLabel': 'Arduino'
   'Serial Read Bytes Until':
     'prefix': 'sreadBytesUntil'
     'body': 'Serial.readBytesUntil(${1:character}, ${2:buffer}, ${3:length});$4'
+    'leftLabel': 'Arduino'
   'Serial Set Timeout':
     'prefix': 'stimeout'
     'body': 'Serial.setTimeout(${1:time});$2'
+    'leftLabel': 'Arduino'
   'Serial Write':
     'prefix': 'swrite'
     'body': 'Serial.write(${1:data});$2'
+    'leftLabel': 'Arduino'
   'Setup':
     'prefix': 'setup'
     'body': """
@@ -94,15 +122,20 @@
         $1
       }
     """
+    'leftLabel': 'Arduino'
   'Shift In':
     'prefix': 'shiftIn'
     'body': 'shiftIn(${1:dataPin}, ${2:clockPin}, ${3:bitOrder});$4'
+    'leftLabel': 'Arduino'
   'Shift Out':
     'prefix': 'shiftOut'
     'body': 'shiftout(${1:dataPin}, ${2:clockPin}, ${3:bitOrder}, ${4:value});$5'
+    'leftLabel': 'Arduino'
   'Tone':
     'prefix': 'tone'
     'body': 'tone(${1:pin}, ${2:frequency}, ${3:duration});$4'
+    'leftLabel': 'Arduino'
   'Millis':
     'prefix': 'millis'
     'body': 'millis()$1'
+    'leftLabel': 'Arduino'
